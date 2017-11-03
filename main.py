@@ -16,12 +16,13 @@ cv2.destroyAllWindows()
 # entering an array and it contains a tuple
 # Two dimensions of height and widths
 # the third column represent the rgb values of the image
-
 print(image.shape)
 
+# Isolating the height and the width
+print("Height of Image:", int(image.shape[0]), 'pixels')
+print("Widht of Image:", int(image.shape[1]), 'pixels')
+
 # saving images 
-
-#cv2.imwrite('output.jpg', image)
-#cv2.imwrite('output.png', image)
+# cv2.imwrite('output.jpg', image)
+# cv2.imwrite('output.png', image)
 cv2.imwrite('gray.jpg', gray_image)
-
